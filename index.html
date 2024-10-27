@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Website</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="customGradient">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-body-transparent">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="position-absolute start-50 translate-middle-x mt-4">
+          <a class="navbar-brand" href="#">
+            <h3>Furdesign.</h3>
+          </a>
+        </div>
+
+        <!-- collapsing element -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="position-absolute top-50 end-0 translate-middle-y me-5">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- carousel -->
+    <div class="container-fluid">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./media/sofa1.jpg" class="img-fluid border rounded  border-0 d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, praesentium?</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./media/sofa2.jpg" class="img-fluid rounded border border-0 d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nulla.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./media/sofa3.jpg" class="img-fluid border rounded  border-0 d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, vel.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- products -->
+    <div id="products">
+
+      <div>
+        <h3 class="text-center mt-4">Our Products</h3>
+      </div>
+
+      <div class="container-fluid d-md-flex mt-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="./media/prod1.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coffee Table</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./media/prod2.jpeg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vanity Set</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./media/prod3.webp" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dining Set</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./media/prod4.avif" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Wardrobe</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./media/prod5.avif" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bed</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./media/prod6.avif" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Arm Chair</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- about page -->
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mt-5 mb-5" id="about">
+
+      <!-- about img -->
+      <div class="w-100 w-md-50">
+        <img class="img-fluid w-100" src="./media/about.png" alt="">
+      </div>
+
+      <!-- about content -->
+        <div class="aboutContent w-75 text-center mt-4 mb-5 mt-md-1 pe-md-4">
+          <h3>Designed for Your Lifestyle</h3><br>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint possimus totam quia fugit quam qui maiores
+            earum corporis blanditiis veritatis corrupti voluptates quidem, facere asperiores architecto quos est,
+            molestiae minus. <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, impedit. Consequuntur, hic aliquam magni
+            totam beatae illum eveniet natus placeat officiis excepturi minima? Asperiores doloremque temporibus dolorum
+            id quis error. <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, similique est? Quod neque numquam unde
+            explicabo deserunt impedit, laudantium placeat!
+          </p>
+        </div>
+      
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="container-fluid bg-secondary d-flex flex-column justify-content-center align-items-center border border-0 rounded-2">
+
+      <div class="w-50 text-center mt-5">
+        <h3>Furdesign.</h3>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nam obcaecati veritatis recusandae
+          dicta totam adipisci quidem, tempore odit inventore.</p>
+      </div>
+
+      <div class="mt-3 fs-5">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-google-plus-g"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+
+      <div class="mt-3 bg-light-subtle d-flex w-100 align-items-center justify-content-center  border rounded-2 mb-2">
+        <p>Copyright &copy; 2024. All right reserved &REG;</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+
+
+<!-- bootstap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navIcons{
+    left: 100px;
+}
+
+.navbar-brand ul{
+    left: 4px;
+}
+
+.carousel-inner img{
+    height: 90vh;
+    width: 100%;
+}
+
+.customGradient{
+    background: linear-gradient(to right, #9e9d9d, #615f5f);
+}
+
+.nav-link:hover{
+    background-color: aliceblue;
+    border-radius: 30px;
+    font-weight: 500;
+    display: inline;
+}
+
+.card{
+    max-height: 450px;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.card-img-top{
+    max-height: 350px;
+}
+
+.card-body{
+    text-align: center;
+}
+
